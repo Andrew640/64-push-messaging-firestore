@@ -12,10 +12,6 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { CoreModule } from './core/core.module';
 
-/// DELETE firebaseConfig
-/// Add your own firebase config to environment.ts
-/// Then use it to initialize angularfire2 AngularFireModule.initializeApp(environment.firebaseConfig),
-import { firebaseConfig } from '../env';
 import { UserLoginComponent } from './user-login/user-login.component'; 
 
 @NgModule({
@@ -26,7 +22,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
     CoreModule

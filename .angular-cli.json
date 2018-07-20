@@ -22,7 +22,7 @@
       "prefix": "",
       "serviceWorker": false,
       "styles": [
-        "styles.sass"
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
